@@ -1,0 +1,62 @@
+.logo-capa {
+    width: 70px;
+    height: auto;
+  }
+
+  .navigation-social {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+  
+    margin-left: auto;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+
+  .navigation-links {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+  
+    list-style: none;
+  }
+
+  .navigation-link {
+    position: relative;
+  
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .navigation-link::before {
+    content: '';
+  
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+  
+    width: 70%;
+    height: 1px;
+    background: var(--red);
+  
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .8s;
+  }
+  
+  .navigation-link:hover {
+    color: var(--red);
+  }
+  
+  .navigation-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform .8s;
+  }
